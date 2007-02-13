@@ -1,0 +1,4 @@
+plugin.tx_scriptaculous {
+	prototype_only = false
+	functions =
+}
