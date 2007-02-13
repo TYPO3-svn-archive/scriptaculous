@@ -62,13 +62,13 @@ class tx_scriptaculous {
 			if (isset($GLOBALS['TSFE']->tmpl->setup['plugin.']['tx_scriptaculous.']['prototype_only']))	{
 
 				if (strCaseCmp($GLOBALS['TSFE']->tmpl->setup['plugin.']['tx_scriptaculous.']['prototype_only'], 'true') == 0)	{
-					self::setPrototypeOnly(TRUE);
+					tx_scriptaculous::setPrototypeOnly(TRUE);
 				} else {
-					self::setPrototypeOnly(FALSE);
+					tx_scriptaculous::setPrototypeOnly(FALSE);
 				}
 
 			} else {
-				self::setPrototypeOnly();
+				tx_scriptaculous::setPrototypeOnly();
 			}
 
 		}
@@ -78,7 +78,7 @@ class tx_scriptaculous {
 			if (isset($GLOBALS['TSFE']->tmpl->setup['plugin.']['tx_scriptaculous.']['functions']))	{
 				$aFunctions = explode(',', $GLOBALS['TSFE']->tmpl->setup['plugin.']['tx_scriptaculous.']['functions']);
 			} else {
-				self::setFunctionsOnly();
+				tx_scriptaculous::setFunctionsOnly();
 			}
 
 		}
